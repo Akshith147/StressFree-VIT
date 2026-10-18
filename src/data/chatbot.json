@@ -2,7 +2,12 @@
   "greeting": "Hi! I'm a simple support bot with tips written by our team. What's on your mind today?",
   "starters": ["I'm stressed about exams", "I can't sleep", "I feel lonely", "I miss home"],
   "crisis": {
-    "keywords": ["suicide", "kill myself", "want to die", "end my life", "self harm", "hurt myself"],
+    "keywords": [
+      "suicide", "suicidal", "kill myself", "killing myself", "want to die", "wanna die",
+      "end my life", "end it all", "don't want to live", "dont want to live", "no reason to live",
+      "tired of living", "better off dead", "self harm", "self harming", "hurt myself",
+      "hurting myself", "cutting myself"
+    ],
     "reply": "I'm really glad you told me. You deserve support right now. Please call Tele-MANAS on 14416 (free, 24/7) or reach out to the VIT counselling centre. If you are in immediate danger, call 112."
   },
   "topics": [

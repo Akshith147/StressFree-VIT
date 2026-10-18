@@ -179,6 +179,20 @@ describe('chatbot.json content', () => {
     },
   );
 
+  // Whole-word matching misses other word forms, so the list needs them spelled out.
+  // If one of these fails after a content change, the helpline card would stop showing for it.
+  it.each([
+    'I feel suicidal',
+    "I'm tired of living",
+    'I keep thinking about killing myself',
+    'i wanna die',
+    'I’ve been self-harming',
+    "I don't want to live anymore",
+    "Honestly I'd be better off dead",
+  ])('treats "%s" as a crisis', (message) => {
+    expect(getReply(message, data).crisis).toBe(true);
+  });
+
   it('has no empty keywords', () => {
     const allKeywords = [...data.crisis.keywords, ...data.topics.flatMap((t) => t.keywords)];
     // normalize() so "  " or "!!" also count as empty
