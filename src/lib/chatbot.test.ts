@@ -158,6 +158,13 @@ describe('chatbot.json content', () => {
     expect(data.starters.length).toBeGreaterThanOrEqual(4);
   });
 
+  // Starters are shown as buttons, so tapping one should never land on the fallback.
+  it.each(data.starters)('starter "%s" gets a topic reply', (starter) => {
+    const reply = getReply(starter, data);
+    expect(reply.crisis).toBe(false);
+    expect(reply.topic).not.toBeNull();
+  });
+
   it('has crisis keywords and a crisis reply', () => {
     expect(data.crisis.keywords.length).toBeGreaterThan(0);
     expect(data.crisis.reply.trim()).not.toBe('');
