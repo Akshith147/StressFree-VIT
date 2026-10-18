@@ -67,13 +67,13 @@ Malformed entries are skipped. Corrupt or inaccessible reads do not crash the pa
 
 | Member | Role |
 | --- | --- |
-| Member 1 | Coder A: setup, shared UI, mood check-ins, History and reviews |
-| Member 2 | Coder B: Home and resource pages; login deferred |
-| Member 3 | Coder C: keyword chatbot and demo counsellor screen |
-| Member 4 | Content and psychology: approved wording and wireframes |
-| Member 5 | Project management, testing, DNS and documents |
+| Akshith Kesari | Coder A: setup, shared UI, mood check-ins, History and reviews |
+| Neeraj | Coder B: Home and resource pages; login deferred |
+| Aarush Bharadwaj | Coder C: keyword chatbot and demo counsellor screen |
+| Dinesh | Content and psychology: approved wording and wireframes |
+| Ansh | Project management, testing, DNS and documents |
 
-Replace these placeholders after the team confirms the member list. Coordinate shared-file changes before integration.
+Coordinate shared-file changes before integration.
 
 ## Remaining checks and integration
 
@@ -81,7 +81,7 @@ Replace these placeholders after the team confirms the member list. Coordinate s
 - Test refresh persistence, delete/cancel, clear/cancel and storage errors in the browser.
 - Integrate the keyword chatbot, resource text and verified campus counselling contact.
 - Check crisis handling before the chatbot is used in the review.
-- Confirm team names and the final custom domain.
+- Confirm the final custom domain.
 
 Automated build and unit checks run locally and in the included workflows. Browser visual checks and interactive end-to-end checks remain separate review steps.
 
