@@ -1,41 +1,306 @@
 {
-  "greeting": "Hi! I'm a simple support bot with tips written by our team. What's on your mind today?",
-  "starters": ["I'm stressed about exams", "I can't sleep", "I feel lonely", "I miss home"],
+  "greeting": "Hi! I'm a simple student check-in bot. I'm not AI or a counsellor—my replies and practical tips were written in advance by our team. Tell me what's been going on, and I'll try to match you with a useful tip.",
+  "starters": [
+    "I'm stressed about exams and CAT 1.",
+    "I haven't been sleeping well lately.",
+    "I'm feeling lonely in the hostel.",
+    "I'm overwhelmed by assignments and deadlines."
+  ],
   "crisis": {
     "keywords": [
-      "suicide", "suicidal", "kill myself", "killing myself", "want to die", "wanna die",
-      "end my life", "end it all", "don't want to live", "dont want to live", "no reason to live",
-      "tired of living", "better off dead", "self harm", "self harming", "hurt myself",
-      "hurting myself", "cutting myself"
+      "suicide",
+      "suicidal",
+      "kill myself",
+      "killing myself",
+      "want to die",
+      "wanna die",
+      "wish i was dead",
+      "wish i were dead",
+      "don't want to live",
+      "dont want to live",
+      "end my life",
+      "take my own life",
+      "self harm",
+      "self-harm",
+      "selfharm",
+      "hurt myself",
+      "hurting myself",
+      "cut myself",
+      "overdose",
+      "jump off",
+      "can't go on",
+      "cant go on",
+      "no reason to live",
+      "better off dead",
+      "end it all",
+      "ending it",
+      "not worth living",
+      "tired of living",
+      "self harming",
+      "self-harming"
     ],
-    "reply": "I'm really glad you told me. You deserve support right now. Please call Tele-MANAS on 14416 (free, 24/7) or reach out to the VIT counselling centre. If you are in immediate danger, call 112."
+    "reply": "I'm really sorry things feel this painful. This bot is not monitored and cannot provide emergency help. Please go to someone you trust now, tell them directly that you may not be safe, and try not to stay alone. In India, call Tele-MANAS at 14416 or 1800-89-14416 for mental-health support; if you or someone else is in immediate danger, call 112 or go to the nearest emergency department. If you are on campus, contact campus security or medical services while getting help."
   },
   "topics": [
     {
       "topic": "exam_stress",
       "label": "Exam stress",
-      "keywords": ["exam", "exams", "cat", "fat", "marks", "fail", "study pressure"],
+      "keywords": [
+        "exam stress",
+        "stressed before exams",
+        "stressing over exams",
+        "stressful exam",
+        "exam anxiety",
+        "exam pressure",
+        "exam panic",
+        "panic before exam",
+        "fear of failing",
+        "blanking out in exams",
+        "cat 1",
+        "cat exam",
+        "fat exam",
+        "arrear",
+        "backlog"
+      ],
       "replies": [
-        "Exams can feel overwhelming. Try splitting revision into 25-minute blocks with 5-minute breaks, and start with one small topic.",
-        "It's normal to feel pressure before exams. Write down the three topics that worry you most and tackle the easiest one first."
+        "That sounds like a lot of pressure. Pick one topic, study for 25 minutes, then take a 5-minute break; start with the next small step rather than the whole syllabus.",
+        "Exam anxiety can make everything feel urgent. Write down what is actually testable, choose the highest-priority item, and try a short practice question before judging how prepared you are.",
+        "You don't have to solve the entire semester tonight. A realistic plan with food, water, and some sleep is usually more useful than an all-nighter."
       ]
     },
     {
       "topic": "sleep",
       "label": "Sleep",
-      "keywords": ["sleep", "can't sleep", "cant sleep", "insomnia", "awake all night", "tired"],
+      "keywords": [
+        "can't sleep",
+        "cant sleep",
+        "cannot sleep",
+        "trouble sleeping",
+        "trouble falling asleep",
+        "sleeping late",
+        "sleep schedule",
+        "no sleep",
+        "not enough sleep",
+        "waking up at night",
+        "insomnia",
+        "sleep deprived",
+        "slept badly",
+        "sleepy in class",
+        "sleeping well"
+      ],
       "replies": [
-        "Poor sleep makes everything harder. Try putting your phone away 30 minutes before bed and keeping the same wake-up time each day."
+        "A rough night can make the next day harder, but try not to fight sleep. Dim your screen, keep the room comfortable, and do something quiet for a little while.",
+        "Consider keeping your wake-up time fairly consistent and avoiding caffeine late in the day. If sleep problems keep affecting classes or daily life, talk with a health professional.",
+        "Try a short wind-down routine: put tomorrow's tasks on paper, set your alarm, and take slow, comfortable breaths. You don't need to force yourself to fall asleep immediately."
       ]
     },
     {
-      "topic": "lonely",
+      "topic": "loneliness",
       "label": "Loneliness",
-      "keywords": ["lonely", "alone", "no friends", "isolated", "left out", "miss home", "homesick"],
+      "keywords": [
+        "feeling lonely",
+        "feel lonely",
+        "so lonely",
+        "lonely in hostel",
+        "no friends",
+        "don't have friends",
+        "dont have friends",
+        "no one to talk to",
+        "nobody to talk to",
+        "left out",
+        "excluded",
+        "alone all day",
+        "isolated",
+        "friendless"
+      ],
       "replies": [
-        "Feeling lonely in a new place is really common. Joining one club or study group this week can be a small first step."
+        "Feeling lonely in a new place can happen even when you're surrounded by people. Could you message one person or sit with someone after class today?",
+        "You don't need a huge friend group overnight. Try one low-pressure connection, like asking a classmate about notes or joining a club activity once.",
+        "Being left out can sting. Look for one safe person you can be yourself around, and consider speaking with a mentor or campus support service if it keeps weighing on you."
+      ]
+    },
+    {
+      "topic": "homesickness",
+      "label": "Homesickness",
+      "keywords": [
+        "homesick",
+        "missing home",
+        "miss home",
+        "miss my family",
+        "missing my family",
+        "miss my parents",
+        "missing parents",
+        "want to go home",
+        "wanna go home",
+        "home sick",
+        "homesickness",
+        "family is far away",
+        "hostel feels strange",
+        "can't adjust to hostel",
+        "cant adjust to hostel"
+      ],
+      "replies": [
+        "Missing home makes sense when so much around you is new. A planned call home and one familiar routine can help you feel a little more grounded.",
+        "You don't have to choose between adapting to college and staying close to family. Set a time to connect with home, then try one small activity on campus.",
+        "Hostel life can take time to feel normal. Keep a few familiar photos or routines nearby, and tell a trusted friend how you're feeling."
+      ]
+    },
+    {
+      "topic": "deadline_pressure",
+      "label": "Assignments & deadlines",
+      "keywords": [
+        "assignment deadline",
+        "deadlines are stressing me",
+        "deadline pressure",
+        "too many assignments",
+        "pending assignments",
+        "assignment backlog",
+        "submission pressure",
+        "submission tomorrow",
+        "project deadline",
+        "lab record pending",
+        "record submission",
+        "late submission",
+        "can't finish assignment",
+        "cant finish assignment",
+        "unfinished work",
+        "assignments and deadlines"
+      ],
+      "replies": [
+        "When deadlines pile up, list every task with its due date, then pick the smallest urgent next step. A 15-minute start can be easier than waiting to feel ready.",
+        "Try separating work into 'must submit now' and 'can improve later.' If a deadline is genuinely unmanageable, contact the faculty member early and explain the situation honestly.",
+        "You may be carrying several deadlines at once, not failing at everything. Choose one assignment, work for 20 minutes, and take a brief break before deciding what comes next."
+      ]
+    },
+    {
+      "topic": "relationship_trouble",
+      "label": "Friendship & relationship trouble",
+      "keywords": [
+        "friendship problems",
+        "fight with friend",
+        "fought with my friend",
+        "best friend ignoring me",
+        "friend is ignoring me",
+        "relationship problems",
+        "breakup",
+        "broke up",
+        "heartbroken",
+        "partner is distant",
+        "girlfriend problems",
+        "boyfriend problems",
+        "toxic friendship",
+        "feeling betrayed",
+        "roommate conflict"
+      ],
+      "replies": [
+        "Conflict with someone important can take up a lot of mental space. Give yourself a moment before replying, then focus on the specific issue and what you need.",
+        "It hurts when a friend or partner feels distant. A calm message using 'I felt...' can open a conversation without assuming what the other person intended.",
+        "You deserve relationships where you feel safe and respected. If things feel threatening or controlling, speak with someone you trust and prioritize your safety."
+      ]
+    },
+    {
+      "topic": "money_worries",
+      "label": "Money worries",
+      "keywords": [
+        "money problems",
+        "financial stress",
+        "running out of money",
+        "cant afford",
+        "can't afford",
+        "no money left",
+        "fees are too high",
+        "fee payment",
+        "tuition fees",
+        "hostel fees",
+        "budget is tight",
+        "broke this month",
+        "family money problems",
+        "money anxiety"
+      ],
+      "replies": [
+        "Money worries can make it hard to focus. Write down what is due, when it is due, and what you have available; seeing the numbers clearly can help you choose a next step.",
+        "Try separating essentials from optional spending for this week. If fees or living costs are the main issue, ask the relevant campus office about payment options or student support.",
+        "You don't need to fix every money problem today. Consider talking with family or a trusted adviser and avoid high-interest borrowing under pressure."
+      ]
+    },
+    {
+      "topic": "burnout",
+      "label": "Low motivation & burnout",
+      "keywords": [
+        "burnt out",
+        "burned out",
+        "burnout",
+        "no motivation",
+        "zero motivation",
+        "unmotivated",
+        "demotivated",
+        "lost motivation",
+        "mentally exhausted",
+        "emotionally exhausted",
+        "tired all the time",
+        "study fatigue",
+        "can't focus anymore",
+        "cant focus anymore",
+        "tired of studying"
+      ],
+      "replies": [
+        "Feeling drained can be a sign that your current pace isn't sustainable, not that you're lazy. Take a real break, eat something, and choose one small task for later.",
+        "When motivation disappears, make the goal tiny: open the notes, solve one question, or work for five minutes. Rest matters too, especially if exhaustion is lasting.",
+        "Try to notice whether you're tired, overloaded, or unsure what to do next; each needs a different response. If this continues or affects daily life, consider campus counselling or a health professional."
+      ]
+    },
+    {
+      "topic": "overwhelmed",
+      "label": "Feeling overwhelmed",
+      "keywords": [
+        "feeling overwhelmed",
+        "too much to handle",
+        "everything is too much",
+        "can't cope",
+        "cant cope",
+        "overloaded",
+        "too many things",
+        "brain is fried",
+        "mind is racing",
+        "panicking about everything",
+        "under pressure",
+        "stressed out",
+        "so much going on",
+        "don't know where to start",
+        "dont know where to start"
+      ],
+      "replies": [
+        "Let's make the next ten minutes smaller. Put everything on paper, circle one thing you can act on now, and leave the rest for after that step.",
+        "When everything feels urgent, pause and take a few slow breaths with your feet on the floor. Then pick just one practical action, not the whole solution.",
+        "You don't have to work everything out at once. Can one task wait, be simplified, or be shared with someone? Asking for help is a reasonable next step."
+      ]
+    },
+    {
+      "topic": "campus_adjustment",
+      "label": "First-year campus adjustment",
+      "keywords": [
+        "new to vit",
+        "first year",
+        "new campus",
+        "campus adjustment",
+        "not adjusting to college",
+        "cant adjust to college",
+        "can't adjust to college",
+        "college feels unfamiliar",
+        "new environment",
+        "hostel rules",
+        "hostel life",
+        "vit vellore",
+        "finding classrooms",
+        "college timetable",
+        "freshers confusion"
+      ],
+      "replies": [
+        "Starting at a new campus brings a lot of unfamiliar systems at once. Pick one practical question—classroom, timetable, portal, or hostel routine—and ask a classmate, senior, or faculty mentor.",
+        "You don't have to feel settled immediately. Explore one campus space or join one low-pressure activity this week, and give yourself time to learn how things work.",
+        "If VIT routines or expectations feel confusing, write down the exact thing you are stuck on and ask the relevant office or mentor. One clear question is easier to solve than the whole adjustment at once."
       ]
     }
   ],
-  "fallback": "I'm not sure I understood. Could you tell me a little more? You can also talk to a counsellor any time."
+  "fallback": "I didn't quite understand that message. You could tell me a little more, or try a starter prompt such as exam stress, sleep, feeling lonely, or deadlines."
 }
