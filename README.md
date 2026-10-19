@@ -13,7 +13,7 @@ This is a self-awareness project, not a diagnostic tool or an emergency service.
 - Shared navigation and help footer on every page.
 - Responsive cream, yellow, orange and red interface with system fonts.
 
-Chat, Resources and Counsellor are placeholders for the remaining team work. The keyword chatbot is not implemented yet. The counsellor screen is a demo that sends no request. Login and sign-up are deferred. No backend, database, analytics or network APIs are connected.
+The keyword chatbot is working with ten team-written topics, whole-word matching, crisis-first replies and links to the demo counsellor screen. Chat messages are not saved. The counsellor form is clearly marked as a demo and sends or stores no request. Resources remains a placeholder; login and sign-up are deferred. No backend, database, analytics or network APIs are connected.
 
 ## Run locally
 
@@ -79,8 +79,8 @@ Coordinate shared-file changes before integration.
 
 - Check all routes on a laptop and at 375 px, including keyboard focus and radio arrow keys.
 - Test refresh persistence, delete/cancel, clear/cancel and storage errors in the browser.
-- Integrate the keyword chatbot, resource text and verified campus counselling contact.
-- Check crisis handling before the chatbot is used in the review.
+- Integrate the resource text and verified campus counselling contact.
+- Recheck crisis handling and review all chatbot wording with the content team before the review.
 - Confirm the final custom domain.
 
 Automated build and unit checks run locally and in the included workflows. Browser visual checks and interactive end-to-end checks remain separate review steps.
